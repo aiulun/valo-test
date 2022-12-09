@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <title>Valorant Team Comp Builder</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <style>
+        .row {
+            margin-top: 25vh;
+            display: block;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        .agent-select {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        .btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 1.3em;
+        }
+        select {
+            display: block;
+        }
+    </style>
+    </head>
+    <body>       
+        <div class="container">
+            <h1>Valorant Team Comp Builder</h1>
+            <h4>Enter number of agents you'd like per class (5 Total)</h4>
+            <div class="dropdown">
+                <label for="first-select">Controllers</label>
+                <select id="first-select">
+                    <option value="select"># of agents</option>
+                </select>
+                <label for="first-select">Duelists</label>
+                <select id="second-select">
+                    <option value="select"># of agents</option>
+                </select>
+                <label for="first-select">Initiators</label>
+                <select id="third-select">
+                    <option value="select"># of agents</option>
+                </select>
+                <label for="first-select">Sentinels</label>
+                <select id="fourth-select">
+                    <option value="select"># of agents</option>
+                </select>
+                <button class="btn">Build Team</button>
+            </div>
+        </div>
+        <script src="utils.js" async defer></script>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
